@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Joey Zhao 的个人主页" />
+    <title>Joey Zhao · 个人主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <nav class="topbar" aria-label="主导航">
+        <a class="brand" href="#top">JZ<span>·</span></a>
+        <a class="nav-link" href="#avatar">数字分身 <span aria-hidden="true">↘</span></a>
+      </nav>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> HELLO, I’M JOEY</p>
+          <h1>Joey<br />Zhao</h1>
+          <p class="tagline">坚定乐观的理想主义者</p>
+          <p class="intro">大一 BME 新生，持续探索理想和爱好中～</p>
+          <div class="status"><i></i> Currently exploring</div>
+        </div>
+        <div class="portrait-wrap" aria-label="Joey Zhao 的头像插画">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="portrait">
+            <div class="portrait-glow"></div>
+            <div class="avatar-photo"><img src="./assets/joey-portrait.jpg" alt="Joey 在黄昏海边的照片" /></div>
+            <p>JOEY / 2026</p>
+          </div>
+          <p class="portrait-note">A freshman<br />in BME</p>
+        </div>
+      </section>
+
+      <section class="about-section" aria-labelledby="about-title">
+        <div class="section-label"><span>01</span><span class="line"></span> ABOUT ME</div>
+        <div class="about-grid">
+          <h2 id="about-title">正在成为<br /><em>更完整的自己。</em></h2>
+          <div class="about-content">
+            <p>我是 Joey，一名刚刚开启大学旅程的 BME 学生。喜欢在理性探索和感性体验之间，保持一点好奇心。</p>
+            <div class="detail-grid">
+              <div><span>身份</span><strong>大学萌新</strong></div>
+              <div><span>关注领域</span><strong>AI · 生命健康 · BME</strong></div>
+              <div><span>最近在做</span><strong>个人主页 / Vibe Coding</strong></div>
+              <div><span>MBTI</span><strong>INTJ · 建筑师</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="interests-section" aria-labelledby="interests-title">
+        <div class="section-label"><span>02</span><span class="line"></span> LITTLE THINGS I LOVE</div>
+        <h2 id="interests-title">我的兴趣</h2>
+        <div class="interests-list" aria-label="兴趣标签">
+          <button type="button" aria-expanded="false">看书</button><button type="button" aria-expanded="false">旅行</button><button type="button" aria-expanded="false">听歌</button><button type="button" aria-expanded="false">演唱会</button><button type="button" aria-expanded="false">脱口秀</button><button type="button" aria-expanded="false">美剧</button><button type="button" aria-expanded="false">跑步</button><button type="button" aria-expanded="false">游泳</button>
+        </div>
+        <div class="interest-detail" id="interestDetail" hidden aria-live="polite">
+          <span class="detail-kicker">INTEREST NOTE</span>
+          <div class="interest-content" id="interestContent"></div>
+        </div>
+      </section>
+
+      <section class="avatar-section" id="avatar" aria-labelledby="avatar-title">
+        <div class="avatar-heading">
+          <div class="section-label"><span>03</span><span class="line"></span> DIGITAL TWIN</div>
+          <h2 id="avatar-title">和我的数字分身<br />聊一聊</h2>
+          <p>它知道关于我的一些小事。试着问问看？</p>
+          <div class="avatar-card">
+            <div class="mini-avatar">JZ</div>
+            <div><strong>Joey’s digital twin</strong><span><i></i> 在线</span></div>
+          </div>
+        </div>
+        <div class="chat-card">
+          <div class="chat-top"><span>JOEY.AI</span><small>v1.0 · PERSONAL TWIN</small></div>
+          <div class="chat-messages" id="chatMessages" aria-live="polite">
+            <div class="message bot">你好。我是 Joey 的数字分身，负责介绍她的近况、兴趣和关注方向。<br />也可以直接说你要推进的事。</div>
+          </div>
+          <div class="quick-questions" aria-label="快捷提问">
+            <button type="button">你现在在做什么？</button>
+            <button type="button">你关注什么方向？</button>
+          </div>
+          <form class="chat-input" id="chatForm">
+            <label class="sr-only" for="chatInput">向 Joey 的数字分身提问</label>
+            <input id="chatInput" type="text" placeholder="输入你的问题..." autocomplete="off" />
+            <button type="submit" aria-label="发送消息">↑</button>
+          </form>
+        </div>
+      </section>
+
+      <footer><span>© 2026 JOEY ZHAO</span><span>MADE WITH CURIOSITY</span></footer>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
